@@ -280,10 +280,32 @@ img {
 
     background-image: linear-gradient(var(--color-gradient),
     var(--color-gradient)),
-    url(../img/img-main.jpg);
+    url(../img/Dark-bg-428.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media screen and (min-width: 480px) {
+    .div-main {
+        background-image: linear-gradient(var(--color-gradient),
+        var(--color-gradient)),
+        url(../img/Dark-bg-768.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .div-main {
+        background-image: linear-gradient(var(--color-gradient),
+        var(--color-gradient)),
+        url(../img/img-main.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .capital-letter {
