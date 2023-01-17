@@ -1781,3 +1781,10 @@ justify-content: space-between;
 }
 
 /* mobile-menu */
+
+@media screen and (min-width: 428px) and (max-width: 479px) {
+    .container-advantage {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+} 
