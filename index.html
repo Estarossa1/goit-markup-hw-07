@@ -213,13 +213,25 @@
         </h2>
         <ul class="ul ul-imeges">
           <li class="li-imeges">
-            <img src="./img/pictures1.jpg" alt="Employee statistics" width="360">
+            <img 
+            srcset="./img/pictures1.jpg 1x, ./img/pictures1@2.jpg 2x"
+            src="./img/pictures1.jpg" 
+            alt="Employee statistics" 
+            width="360">
           </li>
           <li class="li-imeges">
-            <img src="./img/pictures2.jpg" alt="Communication through messengers" width="360">
+            <img 
+            srcset="./img/pictures2.jpg 1x, ./img/pictures2@2.jpg 2x"
+            src="./img/pictures2.jpg" 
+            alt="Communication through messengers" 
+            width="360">
           </li>
           <li class="li-imeges">
-            <img src="./img/pictures3.jpg" alt="The most inspiring places for you" width="360">
+            <img 
+            srcset="./img/pictures3.jpg 1x, ./img/pictures3@2.jpg 2x"
+            src="./img/pictures3.jpg" 
+            alt="The most inspiring places for you" 
+            width="360">
           </li>
         </ul>
       </div>
@@ -231,7 +243,11 @@
         </h2>
         <ul class="ul ul-photos-hero">
           <li class="li-photos-hero">
-              <img src="./img/photo1.jpg" alt="Photo Mark Guerrero" width="264">
+              <img 
+              srcset="./img/photo1.jpg 1x, ./img/photo1@2.jpg 2x"
+              src="./img/photo1.jpg" 
+              alt="Photo Mark Guerrero" 
+              width="264">
               <div class="div-text-hero">
                 <h3 class="team">
                   Mark Guerrero
@@ -281,7 +297,11 @@
               </div>
           </li>
           <li class="li-photos-hero">
-              <img src="./img/photo2.jpg" alt="Photo Tom Ford" width="264">
+              <img 
+              srcset="./img/photo2.jpg 1x, ./img/photo2@2.jpg 2x"
+              src="./img/photo2.jpg" 
+              alt="Photo Tom Ford" 
+              width="264">
               <div class="div-text-hero">
                 <h3 class="team">
                   Tom Ford
@@ -331,7 +351,11 @@
               </div>
           </li>
           <li class="li-photos-hero">
-              <img src="./img/photo3.jpg" alt="Photo Camila Garcia" width="264">
+              <img 
+              srcset="./img/photo3.jpg 1x, ./img/photo3@2.jpg 2x"
+              src="./img/photo3.jpg" 
+              alt="Photo Camila Garcia" 
+              width="264">
               <div class="div-text-hero">
                 <h3 class="team">
                   Camila Garcia
@@ -381,7 +405,11 @@
               </div>
           </li>
           <li class="li-photos-hero">
-              <img src="./img/photo4.jpg" alt="Photo Daniel Wilson" width="264">
+              <img 
+              srcset="./img/photo4.jpg 1x, ./img/photo4@2.jpg 2x"
+              src="./img/photo4.jpg" 
+              alt="Photo Daniel Wilson" 
+              width="264">
               <div class="div-text-hero">
                 <h3 class="team">
                   Daniel Wilson
@@ -565,87 +593,85 @@
     </div>
 
     <!-- mobile-menu -->
-
     <div class="menu-container js-menu-container mobile-container" id="mobile-menu">
-      <button type="button" class="button-close" data-modal-close>
-        <svg class="js-close-menu svg-button-close" width="8" height="8">
-          <use href="./img/icons.svg#icon-button-close"></use>
-        </svg>
-      </button>
-      <div class="div-link-menu">
-        <ul class="ul ul-mobile-menu">
-          <li class="li-mobile-menu">
-            <a href="./index.html" class="mobile-menu-a">
-              Studio
-            </a>
-          </li>
-          <li class="li-mobile-menu">
-            <a href="./portfolio.html" class="mobile-menu-a">
-              Portfolio
-            </a>
-          </li>
-          <li class="li-mobile-menu">
-            <a href="" class="mobile-menu-a">
-              Contacts
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="menu-contacts">
-        <ul class="ul">
-          <li class="number">
-            <a href="tel:+110001111111" class="link-contacts">
-              +11 (000) 111-11-11
-            </a>
-        </li>
-          <li class="mail">
-            <a href="mailto:info@devstudio.com" class="link-contacts">
-              info@devstudio.com
-          </a>
-          </li>
-        </ul>
-      </div>
-      <ul class="ul svg-team">
-        <!--  -->
-          <li class="li-svg-team">
-              <a href="./index.html" class="div-svg-team svg-link">
-                <svg class="svg-mesengers" width="16" height="16">
-                  <use href="./img/icons.svg#icon-instagram">
-                  </use>
-                </svg>
+      <div class="container-menu">
+        <button type="button" class="button-close" data-modal-close>
+          <svg class="js-close-menu svg-button-close" width="8" height="8">
+            <use href="./img/icons.svg#icon-button-close"></use>
+          </svg>
+        </button>
+          <ul class="ul ul-mobile-menu">
+            <li class="li-mobile-menu">
+              <a href="./index.html" class="mobile-menu-a">
+                Studio
+              </a>
+            </li>
+            <li class="li-mobile-menu">
+              <a href="./portfolio.html" class="mobile-menu-a">
+                Portfolio
+              </a>
+            </li>
+            <li class="li-mobile-menu">
+              <a href="" class="mobile-menu-a number-phone">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-contacts">
+          <ul class="ul ul-contacts-menu">
+            <li class="number">
+              <a href="tel:+110001111111" class="link-contacts-menu number-phone">
+                +11 (000) 111-11-11
               </a>
           </li>
-        <!--  -->
-          <li class="li-svg-team">
-              <a href="./index.html" class="div-svg-team svg-link">
-                <svg class="svg-mesengers" width="16" height="16">
-                  <use href="./img/icons.svg#icon-twitter">
-                  </use>
-                </svg>
-              </a>
-          </li>
-          <!--  -->
-            <li class="li-svg-team">
-                <a href="./index.html" class="div-svg-team svg-link">
-                  <svg class="svg-mesengers" width="16" height="16">
-                    <use href="./img/icons.svg#icon-facebook">
-                    </use>
-                  </svg>
-                </a>
+            <li class="mail">
+              <a href="mailto:info@devstudio.com" class="link-contacts-menu mail">
+                info@devstudio.com
+            </a>
             </li>
-          <!--  -->
-            <li class="li-svg-team">
-                <a href="./index.html" class="div-svg-team svg-link">
-                  <svg class="svg-mesengers" width="16" height="16">
-                    <use href="./img/icons.svg#icon-linkedin">
-                    </use>
-                  </svg>
-                </a>
-            </li>
-        <!--  -->
-      </ul>
+          </ul>
+          <ul class="ul svg-team-menu">
+            <!--  -->
+              <li class="li-svg-team">
+                  <a href="./index.html" class="div-svg-team svg-link">
+                    <svg class="svg-mesengers" width="16" height="16">
+                      <use href="./img/icons.svg#icon-instagram">
+                      </use>
+                    </svg>
+                  </a>
+              </li>
+            <!--  -->
+              <li class="li-svg-team">
+                  <a href="./index.html" class="div-svg-team svg-link">
+                    <svg class="svg-mesengers" width="16" height="16">
+                      <use href="./img/icons.svg#icon-twitter">
+                      </use>
+                    </svg>
+                  </a>
+              </li>
+              <!--  -->
+                <li class="li-svg-team">
+                    <a href="./index.html" class="div-svg-team svg-link">
+                      <svg class="svg-mesengers" width="16" height="16">
+                        <use href="./img/icons.svg#icon-facebook">
+                        </use>
+                      </svg>
+                    </a>
+                </li>
+              <!--  -->
+                <li class="li-svg-team">
+                    <a href="./index.html" class="div-svg-team svg-link">
+                      <svg class="svg-mesengers" width="16" height="16">
+                        <use href="./img/icons.svg#icon-linkedin">
+                        </use>
+                      </svg>
+                    </a>
+                </li>
+            <!--  -->
+          </ul>
+        </div>
     </div>
-
     <!-- mobile-menu -->
 
   </footer>

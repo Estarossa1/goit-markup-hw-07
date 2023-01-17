@@ -48,6 +48,14 @@
           </a>
         </li>
       </ul>
+      <div class="div-button-mobile-menu" > 
+        <!-- class="container" -->
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="svg-close-menu" width="32" height="22">
+            <use href="./img/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </header>
   <section class="div-main-portfolio">
@@ -87,7 +95,10 @@
         <li class="li-portfolio-job">
             <a href="" class="portfolio-a">
               <div class="main-images">
-                <img src="./img/banking.jpg" alt="Banking App Interface Concept" >
+                <img 
+                srcset="./img/banking.jpg 1x, ./img/banking@2.jpg 2x"
+                src="./img/banking.jpg" 
+                alt="Banking App Interface Concept" >
                   <p class="p-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · 
                     Task Manager App · 
@@ -110,7 +121,10 @@
         <li class="li-portfolio-job">
             <a href="" class="portfolio-a">
               <div class="main-images">
-                <img src="./img/cashless.jpg" alt="Cashless Payment"  >
+                <img
+                srcset="./img/cashless.jpg 1x, ./img/cashless@2.jpg 2x"
+                src="./img/cashless.jpg" 
+                alt="Cashless Payment"  >
                   <p class="p-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · 
                     Task Manager App · 
@@ -133,7 +147,11 @@
         <li class="li-portfolio-job">
           <a href="" class="portfolio-a">
             <div class="main-images">
-              <img src="./img/meditaion.jpg" alt="Meditaion App" width="360">
+              <img
+              srcset="./img/meditaion.jpg 1x, ./img/meditaion@2.jpg 2x"
+              src="./img/meditaion.jpg" 
+              alt="Meditaion App" 
+              width="360">
                 <p class="p-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · 
                   Task Manager App · 
@@ -156,7 +174,11 @@
         <li class="li-portfolio-job">
             <a href="" class="portfolio-a">
               <div class="main-images">
-                <img src="./img/taxi.jpg" alt="Taxi Service" width="360">
+                <img
+                srcset="./img/taxi.jpg 1x, ./img/taxi@2.jpg 2x"
+                src="./img/taxi.jpg" 
+                alt="Taxi Service" 
+                width="360">
                   <p class="p-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · 
                     Task Manager App · 
@@ -179,7 +201,11 @@
         <li class="li-portfolio-job">
             <a href="" class="portfolio-a">
               <div class="main-images">
-                <img src="./img/screen.jpg" alt="Screen Illustrations" width="360">
+                <img
+                srcset="./img/screen.jpg 1x, ./img/screen@2.jpg 2x"
+                src="./img/screen.jpg" 
+                alt="Screen Illustrations" 
+                width="360">
                   <p class="p-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · 
                     Task Manager App · 
@@ -202,7 +228,11 @@
         <li class="li-portfolio-job">
             <a href="" class="portfolio-a">
               <div class="main-images">
-                <img src="./img/online.jpg" alt="Online Courses" width="360">
+                <img
+                srcset="./img/online.jpg 1x, ./img/online@2.jpg 2x"
+                src="./img/online.jpg" 
+                alt="Online Courses" 
+                width="360">
                   <p class="p-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · 
                     Task Manager App · 
@@ -225,7 +255,11 @@
         <li class="li-portfolio-job">
             <a href="" class="portfolio-a">
               <div class="main-images">
-                <img src="./img/instagram.jpg" alt="Instagram Stories Concept" width="360">
+                <img
+                srcset="./img/instagram.jpg 1x, ./img/instagram@2.jpg 2x"
+                src="./img/instagram.jpg" 
+                alt="Instagram Stories Concept" 
+                width="360">
                   <p class="p-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · 
                     Task Manager App · 
@@ -248,7 +282,11 @@
         <li class="li-portfolio-job">
             <a href="" class="portfolio-a">
               <div class="main-images">
-                <img src="./img/organic.jpg" alt="Organic Food" width="360">
+                <img
+                srcset="./img/organic.jpg 1x, ./img/organic@2.jpg 2x"
+                src="./img/organic.jpg" 
+                alt="Organic Food" 
+                width="360">
                   <p class="p-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · 
                     Task Manager App · 
@@ -271,7 +309,11 @@
         <li class="li-portfolio-job">
             <a href="" class="portfolio-a">
               <div class="main-images">
-                <img src="./img/fresh.jpg" alt="Fresh Coffee" width="360">
+                <img
+                srcset="./img/fresh.jpg 1x, ./img/fresh@2.jpg 2x"
+                src="./img/fresh.jpg" 
+                alt="Fresh Coffee" 
+                width="360">
                   <p class="p-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · 
                     Task Manager App · 
@@ -293,6 +335,87 @@
         <!--  -->
       </ul>
     </div>
+    <!-- mobile-menu -->
+    <div class="menu-container js-menu-container mobile-container" id="mobile-menu">
+      <div class="container-menu">
+        <button type="button" class="button-close" data-modal-close>
+          <svg class="js-close-menu svg-button-close" width="8" height="8">
+            <use href="./img/icons.svg#icon-button-close"></use>
+          </svg>
+        </button>
+          <ul class="ul ul-mobile-menu">
+            <li class="li-mobile-menu">
+              <a href="./index.html" class="mobile-menu-a">
+                Studio
+              </a>
+            </li>
+            <li class="li-mobile-menu">
+              <a href="./portfolio.html" class="mobile-menu-a">
+                Portfolio
+              </a>
+            </li>
+            <li class="li-mobile-menu">
+              <a href="" class="mobile-menu-a number-phone">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-contacts">
+          <ul class="ul ul-contacts-menu">
+            <li class="number">
+              <a href="tel:+110001111111" class="link-contacts-menu number-phone">
+                +11 (000) 111-11-11
+              </a>
+          </li>
+            <li class="mail">
+              <a href="mailto:info@devstudio.com" class="link-contacts-menu mail">
+                info@devstudio.com
+            </a>
+            </li>
+          </ul>
+          <ul class="ul svg-team-menu">
+            <!--  -->
+              <li class="li-svg-team">
+                  <a href="./index.html" class="div-svg-team svg-link">
+                    <svg class="svg-mesengers" width="16" height="16">
+                      <use href="./img/icons.svg#icon-instagram">
+                      </use>
+                    </svg>
+                  </a>
+              </li>
+            <!--  -->
+              <li class="li-svg-team">
+                  <a href="./index.html" class="div-svg-team svg-link">
+                    <svg class="svg-mesengers" width="16" height="16">
+                      <use href="./img/icons.svg#icon-twitter">
+                      </use>
+                    </svg>
+                  </a>
+              </li>
+              <!--  -->
+                <li class="li-svg-team">
+                    <a href="./index.html" class="div-svg-team svg-link">
+                      <svg class="svg-mesengers" width="16" height="16">
+                        <use href="./img/icons.svg#icon-facebook">
+                        </use>
+                      </svg>
+                    </a>
+                </li>
+              <!--  -->
+                <li class="li-svg-team">
+                    <a href="./index.html" class="div-svg-team svg-link">
+                      <svg class="svg-mesengers" width="16" height="16">
+                        <use href="./img/icons.svg#icon-linkedin">
+                        </use>
+                      </svg>
+                    </a>
+                </li>
+            <!--  -->
+          </ul>
+        </div>
+    </div>
+    <!-- mobile-menu -->
   </section>
   <footer class="footer div-footer">
     <div class="container div-footer-all">
@@ -363,5 +486,6 @@
       </form>
     </div>
   </footer>
+  <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
